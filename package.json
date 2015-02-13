@@ -1,8 +1,20 @@
 {
-	"name": "murray-portfolio",
-	"version": "0.0.1",
-	"private": true,
-	"dependencies": {
-		
-	}
+  "name": "murray-portfolio",
+  "version": "0.0.1",
+  "private": true,
+  "dependencies": {},
+  "description": "a simple portfolio to showcase some of my work",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://JonathanMurray@github.com/JonathanMurray/murray-portfolio.git"
+  },
+  "author": "Jonathan Murray",
+  "license": "BSD-2-Clause",
+  "bugs": {
+    "url": "https://github.com/JonathanMurray/murray-portfolio/issues"
+  }
 }
