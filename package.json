@@ -3,9 +3,13 @@
   "version": "0.0.1",
   "private": true,
   "dependencies": {},
+  "engines": {
+    "node": "0.10.x"
+  },
   "description": "a simple portfolio to showcase some of my work",
   "main": "index.js",
   "scripts": {
+    "start": "node index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
