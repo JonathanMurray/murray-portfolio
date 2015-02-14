@@ -15,12 +15,11 @@ app.engine('html', hbs.engine);
 app.set('view engine', 'html');
 
 tabs = [
-	{name:"about", link_text:"about"},
-	{name:"chatbot", link_text:"chatbot", demo:true, description: "A Prolog project"},
-	{name:"pong", link_text:"pong", demo:true, description: "A simple JavaScript-game"},
-	{name:"genetic-elevators", link_text:"genetics", description: "Computer Science Bachelor's project"},
-	{name:"soundcloud", link_text:"soundcloud"},
-	{name:"youtube", link_text:"youtube"},
+	{name:"about", link_text:"About"},
+	{name:"chatbot", link_text:"ChatBot", demo:true, description: "A Prolog project"},
+	{name:"pong", link_text:"Pong", demo:true, description: "A simple JavaScript-game"},
+	{name:"genetic-elevators", link_text:"Genetics", description: "Computer Science Bachelor's project"},
+	{name:"soundcloud", link_text:"SoundCloud"},
 ];
 
 app.get('/', function(req, res) {
