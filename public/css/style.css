@@ -29,6 +29,10 @@ nav li{
 
 }
 
+a{
+	color: inherit;
+}
+
 nav a.tab-link{
 	transition: border 0.1s, background 0.3s, color 1s;
 	margin: 0 2px;
@@ -69,27 +73,52 @@ nav .demo-icon{
 }
 
 nav .icon-wrapper{
+	/*margin-top: 1em;*/
+	margin-left: 0.2em;
+}
+
+
+nav #nav-icons{
+	position: relative;
+	left: 22px;
+	top: -43px;
+}
+
+nav #nav-icons ul li{
+	display: inline;
+	float: left;
+	margin: 0;
+}
+
+nav #nav-icons img{
+	width: 24px;
+	border: 2px solid black;
+	border-radius: 7px;
+}
+
+nav #random-quote{
+	margin-left: 0.8em;
 	margin-top: 1em;
+	height: 90px;
+	overflow-y: hidden;
+	font-size: 1em;
+	color: #555;
+}
+
+nav #random-quote:hover{
+	color: #111;
+}
+
+nav #nav-image{
 	margin-left: 1em;
+	margin-top: 1.2em;
+	float:left;
 }
 
-nav .icon-wrapper .colored{
-	position: relative;
-	left: -32px;
-	visibility: hidden;
-	transition: left 0.1s;
+nav #nav-image img{
+	border: 1px solid #FFD700;
+	border-radius: 10px;
 }
-
-nav .icon-wrapper .black-and-white{
-	visibility: visible;
-}
-
-nav .icon-wrapper:hover .colored{
-	position: relative;
-	left: 10px;	
-	visibility: visible;
-}
-
 
 .tab{
 	float: left;
@@ -194,4 +223,17 @@ nav .icon-wrapper:hover .colored{
 	margin-left: 0.5em;
 	padding-top: 4em;
 	float: left;
+}
+
+
+#towerdefense-img{
+	margin-top: 1em;
+	float: left;
+}
+
+#towerdefense-text{
+	float: left;
+	margin-top: 2em;
+	margin-left: 2.5em;
+	width: 30%;
 }
