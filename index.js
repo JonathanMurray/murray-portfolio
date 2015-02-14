@@ -22,8 +22,16 @@ tabs = [
 	{name:"soundcloud", link_text:"SoundCloud"},
 ];
 
+icons = [
+	{src:"static/images/soundcloud-icon.png", href:"https://soundcloud.com/goblinsguild"},
+	{src:"static/images/youtube-icon.jpg", href:"https://www.youtube.com/user/GoblinsGuild"},
+	{src:"static/images/github-icon.jpg", href:"https://github.com/JonathanMurray"},
+	{src:"static/images/linkedin-icon.png", href:"https://www.linkedin.com/profile/view?id=312787250&trk=nav_responsive_tab_profile"},
+
+];
+
 app.get('/', function(req, res) {
-	res.render('main.html', {layout: false, tabs:tabs});
+	res.render('main.html', {layout: false, tabs:tabs, icons:icons});
 });
 
 app.use('/static', express.static(__dirname + '/public'));

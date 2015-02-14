@@ -29,7 +29,7 @@ nav li{
 
 }
 
-nav a{
+nav a.tab-link{
 	transition: border 0.1s, background 0.3s, color 1s;
 	margin: 0 2px;
 	padding: 0.5em 0;
@@ -44,28 +44,50 @@ nav a{
 	border-radius: 5px;
 }
 
-nav a:hover{
+nav a.tab-link:hover{
 	border-width: 2px;
 	border-color: #FFB84D;
 }
 
-nav a.active-link{
+nav a.tab-link.active-link{
 	background: #639;
 	color: #DDD;
 }
 
-nav a .selected-tab-icon{
+nav a.tab-link .selected-tab-icon{
 	visibility: hidden;
 	width: 25px;
 	height: 16px;
 }
 
-nav a.active-link .selected-tab-icon{
+nav a.tab-link.active-link .selected-tab-icon{
 	visibility: visible;
 }
 
 nav .demo-icon{
 	width: 50px;
+}
+
+nav .icon-wrapper{
+	margin-top: 1em;
+	margin-left: 1em;
+}
+
+nav .icon-wrapper .colored{
+	position: relative;
+	left: -32px;
+	visibility: hidden;
+	transition: left 0.1s;
+}
+
+nav .icon-wrapper .black-and-white{
+	visibility: visible;
+}
+
+nav .icon-wrapper:hover .colored{
+	position: relative;
+	left: 10px;	
+	visibility: visible;
 }
 
 
