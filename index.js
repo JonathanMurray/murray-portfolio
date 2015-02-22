@@ -18,7 +18,8 @@ app.use(cors());
 
 tabs = [
 	{name:"about", link_text:"About"},
-	{name:"towerdefense", link_text:"TD Game", description:" A Tower-defense game written in Java"},
+	{name:"familytree", link_text:"FamilyTree", description: "An interactive family tree webpage"},
+	{name:"towerdefense", link_text:"TD Game", description: "A Tower-defense game written in Java"},
 	{name:"chatbot", link_text:"ChatBot", demo:true, description: "A Prolog project"},
 	{name:"pong", link_text:"Pong", demo:true, description: "A simple JavaScript-game"},
 	{name:"genetic-elevators", link_text:"Genetics", description: "Computer Science Bachelor's project"},
