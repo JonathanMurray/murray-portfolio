@@ -10,7 +10,7 @@ $(document).keyup(keyHandler);
 function setup(){
   var tab = getActiveTabFromUrl();
   setActiveTab(tab);
-  $("nav a").click(navClick);
+  $("nav .tab-link").click(navClick);
   setupChatbot();
   setupNavigationArrows();
   setupPong();
