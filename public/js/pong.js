@@ -181,9 +181,9 @@ function aiCheckboxClicked(event){
 }
 
 function pongKeyHandler(event){
-	handlePadKeys(padL, event.keyCode.toString());
+	handlePadKeys(padL, event.keyCode.toString(), event.type);
 	if(! useAI){
-		handlePadKeys(padR, event.keyCode.toString());
+		handlePadKeys(padR, event.keyCode.toString(), event.type);
 	}
 
 
@@ -191,7 +191,7 @@ function pongKeyHandler(event){
 	// event.keyCode.toString()
 }	
 
-function handlePadKeys(pad, keyCode){
+function handlePadKeys(pad, keyCode, eventType){
 	
 	var wKey = "87";
 	var sKey = "83";
@@ -210,15 +210,15 @@ function handlePadKeys(pad, keyCode){
 			"76": DOWN	//L
 		}
 	}
-	console.log(dirs);
+	// console.log(dirs);
 	direction = dirs[keyCode];
-	console.log(direction);
+	// console.log(direction);
 	if(validDirections.indexOf(direction) > -1){
-		if(event.type == "keydown"){
-			console.log(direction);
+		if(eventType == "keydown"){
+			// console.log(direction);
 			pad.direction = direction;
-		}else if(event.type == "keyup" && pad.direction == direction){
-			console.log("BLAHH");
+		}else if(eventType == "keyup" && pad.direction == direction){
+			// console.log("BLAHH");
 			pad.direction = STILL;
 		}	
 	}

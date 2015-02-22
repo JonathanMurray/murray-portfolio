@@ -102,7 +102,6 @@ function setupRandomQuote(){
     url: "http://api.theysaidso.com/qod.json",
     context: $("#random-quote")
   }).done(function(data) {
-    console.log(data);
     $( this ).html(data.contents.quote);
   });
 }
