@@ -7,6 +7,8 @@ $(document).ready(setup);
 $(document).keydown(keyHandler);
 $(document).keyup(keyHandler);
 
+
+
 function setup(){
   var tab = getActiveTabFromUrl();
   setActiveTab(tab);
@@ -105,5 +107,4 @@ function setupRandomQuote(){
     $( this ).html(data.contents.quote);
   });
 }
-
 

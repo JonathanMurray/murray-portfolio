@@ -1,7 +1,12 @@
 
 
+html,body{
+	min-height: 100%;
+}
+
+
 body{
-	background: black;
+	background: url("../images/blue-background.jpg");
 	font-family: 'Cantarell', sans-serif;
 	color: #BBB;
 }
@@ -12,7 +17,7 @@ nav{
 	background: gray;
 	float: left;
 	width: 11em;
-	height: 35em;
+	height: 37em; /* Same as content height */
 	color: #333;
 	border-radius: 0.5em;
 }
@@ -123,13 +128,14 @@ nav #nav-image img{
 .tab{
 	float: left;
 	padding: 0 0em 0 0em;
-	background: url("../images/blue-background.jpg");
-	height: 35em;
+	
 	width: calc(100% - 11em);
+	height: 37em; /* Same as nav height */
 	overflow-y: scroll;
 }
 
 .active-tab .column{
+	height: 100%;
 	float: left;
 	display: inline-block;
 	
@@ -140,7 +146,7 @@ nav #nav-image img{
 }
 
 .active-tab .column:nth-child(odd){
-	padding-top: 30%;
+	/*padding-top: 30%;*/
 	padding-left: 0.7em;
 	width: 5%;
 }
@@ -164,7 +170,7 @@ nav #nav-image img{
 .arrow-icon{
 	width: 2em;
 	border-radius: 1em;
-	position: absolute;
+	position: relative;
 	top: 40%;
 	transition: background 0.2s;
 }
