@@ -74,7 +74,13 @@ nav a.tab-link.active-link .selected-tab-icon{
 }
 
 nav .demo-icon{
+	vertical-align: middle;
 	width: 50px;
+}
+
+nav .under-construction-icon{
+	vertical-align: middle;
+	width: 25px;
 }
 
 nav .icon-wrapper{

@@ -1,8 +1,11 @@
 <li> 
-	<a href="#{{name}}" title="{{description}}" class="tab-link"> 
+	<a href="#{{name}}" title="{{#work_in_progress}}[WORK IN PROGRESS] {{/work_in_progress}}{{description}}" class="tab-link"> 
 		<img src="static/images/coin.gif" class="selected-tab-icon"> {{link_text}} 
 		{{#demo}}
 			<img src="static/images/demo.png" class="demo-icon">
 		{{/demo}}
+		{{#work_in_progress}}
+			<img src="static/images/work-in-progress.png" class="under-construction-icon">
+		{{/work_in_progress}}
 	</a> 
 </li>
