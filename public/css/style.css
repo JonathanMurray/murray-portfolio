@@ -41,7 +41,7 @@ a{
 nav a.tab-link{
 	transition: border 0.1s, background 0.3s, color 1s;
 	margin: 0 2px;
-	padding: 0.5em 0;
+	padding: 0.4em 0;
 	display: block;
 	text-decoration: none;
 	color: inherit;
@@ -248,4 +248,16 @@ nav #nav-image img{
 	margin-top: 2em;
 	margin-left: 2.5em;
 	width: 30%;
+}
+
+#cv-tab p{
+	font-size: 0.8em;
+}
+
+#cv-tab h4{
+	margin-bottom: 0.5em;
+}
+
+#cv-tab h5{
+	margin: 0;
 }

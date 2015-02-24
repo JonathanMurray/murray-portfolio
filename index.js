@@ -24,6 +24,7 @@ tabs = [
 	{name:"pong", link_text:"Pong", demo:true, description: "A simple JavaScript-game"},
 	{name:"genetic-elevators", link_text:"Genetics", description: "Computer Science Bachelor's project"},
 	{name:"soundcloud", link_text:"SoundCloud"},
+	{name:"cv", link_text:"CV", description: "A short extract from my CV"}
 ];
 
 icons = [
