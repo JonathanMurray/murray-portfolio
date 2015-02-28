@@ -79,6 +79,8 @@ function setupChatbot(){
 }
 
 function sendChatbotInput(input){
+  $("#chatbot-output").html("PAGE UNDER CONSTRUCTION. This feature is not available yet.");
+  return;
   formattedInput = input.replace(" ", "+");
   $.ajax({
     url: "http://localhost:5001/?input=" + formattedInput,
