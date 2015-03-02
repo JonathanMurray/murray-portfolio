@@ -10,9 +10,11 @@ $(document).keyup(keyHandler);
 
 
 function setup(){
+
   var tab = getActiveTabFromUrl();
   setActiveTab(tab);
   $("nav .tab-link").click(navClick);
+  setupAjax();
   setupChatbot();
   setupNavigationArrows();
   setupPong();
@@ -71,22 +73,44 @@ function changeTab(indexChange){
   setActiveTab(newTab);  
 }
 
+function setupAjax(){
+  $.ajaxSetup({
+    timeout: 7000
+  });
+}
+
 function setupChatbot(){
+  setupChatbotButton();
   $("#send-chatbot-input").click(
     function(){
       sendChatbotInput($("#chatbot-input").val());
     });
 }
 
+function setupChatbotButton(){
+  $("#chatbot-input").keyup(function(event){
+    if(event.keyCode == 13){ //Enter
+        $("#send-chatbot-input").click();
+    }
+});
+}
+
 function sendChatbotInput(input){
-  $("#chatbot-output").html("PAGE UNDER CONSTRUCTION. This feature is not available yet.");
-  return;
   formattedInput = input.replace(" ", "+");
-  $.ajax({
-    url: "http://localhost:5001/?input=" + formattedInput,
+  var ip = "85.227.183.131";
+  var port = "5001"; 
+  $("#chatbot-output").html("Waiting for server ...");
+  var ajax = $.ajax({
+    url: "http://" + ip + ":" + port + "/?input=" + formattedInput,
     context: $("#chatbot-output")
-  }).done(function(data) {
+  });
+  ajax.done(function(data) {
     $( this ).html(data);
+  });
+  ajax.error(function(data) {
+    console.log("Printing ERROR-response from chatbot server:");
+    console.log(data);
+    $( this ).html("ERROR response from chatbot server: '" + data.statusText + "'");
   });
 }
 

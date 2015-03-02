@@ -186,11 +186,20 @@ nav #nav-image img{
 	background: #BBD;
 }
 
-
-
-
+#chatbot-input{
+	background: black;
+	color: #009900;
+	padding-left: 0.5em;
+	border: 1px solid #444;
+	font-weight: bold;
+}
 
 #chatbot-output{
+	background: black;
+	color: #009900;
+	border: 1px solid #444;
+	padding: 1em 0 1em 2em;
+	margin: 4em 6em 0 0;
 	font-size: 0.75em;
 }
 
@@ -202,7 +211,7 @@ nav #nav-image img{
 }
 
 #chatbot-description-section{
-	margin-top: 1em;
+	margin-top: 5em;
 	float:left;
 	width: 46%;
 	display: inline-block;
@@ -211,6 +220,8 @@ nav #nav-image img{
 
 
 #genetics-img{
+	margin-top: 1.5em;
+	margin-left: 1em;
 	display: inline-block;
 }
 
@@ -248,6 +259,10 @@ nav #nav-image img{
 	margin-top: 2em;
 	margin-left: 2.5em;
 	width: 30%;
+}
+
+#familytree-text{
+	margin-top: 1em;
 }
 
 #cv-tab p{
