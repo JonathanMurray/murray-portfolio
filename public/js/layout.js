@@ -19,6 +19,8 @@ function setup(){
   setupNavigationArrows();
   setupPong();
   setupRandomQuote();
+
+  warnAboutHttps();
 }
 
 function getActiveTabFromUrl(){
@@ -134,3 +136,8 @@ function setupRandomQuote(){
   });
 }
 
+function warnAboutHttps(){
+  if (window.location.protocol == "https:") {
+    alert("Change to HTTP in the address bar! Some features won't work properly under HTTPS.")
+  }
+}
